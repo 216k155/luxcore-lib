@@ -11,10 +11,7 @@
     "build": "gulp"
   },
   "contributors": [
-    {
-      "name": "216k155",
-      "email": "216k155@i2pd.net"
-    }
+    "216k155 <216k155@i2pd.net>"
   ],
   "keywords": [
     "litecoin",
@@ -35,7 +32,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/216k155/luxcore-lib.git"
+    "url": "git+https://github.com/216k155/luxcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -53,8 +50,16 @@
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "luxcore-build": "216k155/luxcore-build",
+    "luxcore-build": "github:216k155/luxcore-build",
     "sinon": "^1.13.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/216k155/luxcore-lib/issues"
+  },
+  "homepage": "https://github.com/216k155/luxcore-lib#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }
