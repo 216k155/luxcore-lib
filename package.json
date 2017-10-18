@@ -1,6 +1,6 @@
 {
   "name": "luxcore-lib",
-  "version": "1.0.0",
+  "version": "0.13.22",
   "description": "A pure and powerful JavaScript Luxcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
