@@ -1,0 +1,30 @@
+{
+  "name": "luxcore-lib",
+  "main": "./luxcore-lib.min.js",
+  "version": "0.13.19",
+  "homepage": "http://luxcore.io",
+  "authors": [
+    "BitPay, Inc."
+  ],
+  "description": "A pure, powerful core for your litecoin project.",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "litecoin",
+    "luxcore",
+    "btc",
+    "satoshi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "CONTRIBUTING.md",
+    "gulpfile.js",
+    "lib",
+    "index.js",
+    "karma.conf.js",
+    "npm-shrinkwrap.json",
+    "test"
+  ]
+}
