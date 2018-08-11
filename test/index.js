@@ -1,16 +1,16 @@
 'use strict';
 
 var should = require('chai').should();
-var luxcore = require('../');
+var bitcore = require('../');
 
 describe('#versionGuard', function() {
-  it('global._luxcore should be defined', function() {
-    should.equal(global._luxcore, luxcore.version);
+  it('global._bitcore should be defined', function() {
+    should.equal(global._bitcore, bitcore.version);
   });
 
   it('throw an error if version is already defined', function() {
     (function() {
-      luxcore.versionGuard('version');
-    }).should.throw('More than one instance of luxcore');
+      bitcore.versionGuard('version');
+    }).should.throw('More than one instance of bitcore');
   });
 });

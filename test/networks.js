@@ -18,16 +18,18 @@ describe('Networks', function() {
   it('will enable/disable regtest Network', function() {
     networks.enableRegtest();
     networks.testnet.networkMagic.should.deep.equal(new Buffer('fabfb5da', 'hex'));
-    networks.testnet.port.should.equal(19444);
+    networks.testnet.port.should.equal(18444);
     networks.testnet.dnsSeeds.should.deep.equal([]);
     networks.testnet.regtestEnabled.should.equal(true);
 
     networks.disableRegtest();
-    networks.testnet.networkMagic.should.deep.equal(new Buffer('fdd2c8f1', 'hex'));
-    networks.testnet.port.should.equal(19335);
+    networks.testnet.networkMagic.should.deep.equal(new Buffer('0b110907', 'hex'));
+    networks.testnet.port.should.equal(18333);
     networks.testnet.dnsSeeds.should.deep.equal([
-      'testnet-seed.litecointools.com',
-      'seed-b.litecoin.loshan.co.uk'
+      'testnet-seed.bitcoin.petertodd.org',
+      'testnet-seed.bluematt.me',
+      'testnet-seed.alexykot.me',
+      'testnet-seed.bitcoin.schildbach.de'
     ]);
   });
 

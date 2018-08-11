@@ -1,70 +1,69 @@
 'use strict';
 
-var luxcore = module.exports;
+var bitcore = module.exports;
 
 // module information
-luxcore.version = 'v' + require('./package.json').version;
-luxcore.versionGuard = function(version) {
+bitcore.version = 'v' + require('./package.json').version;
+bitcore.versionGuard = function(version) {
   if (version !== undefined) {
     var message = 'More than one instance of luxcore-lib found. ' +
       'Please make sure to require luxcore-lib and check that submodules do' +
       ' not also include their own luxcore-lib dependency.';
-    throw new Error(message);
+    console.log(message);
   }
 };
-luxcore.versionGuard(global._luxcore);
-global._luxcore = luxcore.version;
+bitcore.versionGuard(global._luxcore);
+global._luxcore = bitcore.version;
 
 // crypto
-luxcore.crypto = {};
-luxcore.crypto.BN = require('./lib/crypto/bn');
-luxcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
-luxcore.crypto.Hash = require('./lib/crypto/hash');
-luxcore.crypto.Random = require('./lib/crypto/random');
-luxcore.crypto.Point = require('./lib/crypto/point');
-luxcore.crypto.Signature = require('./lib/crypto/signature');
+bitcore.crypto = {};
+bitcore.crypto.BN = require('./lib/crypto/bn');
+bitcore.crypto.ECDSA = require('./lib/crypto/ecdsa');
+bitcore.crypto.Hash = require('./lib/crypto/hash');
+bitcore.crypto.Random = require('./lib/crypto/random');
+bitcore.crypto.Point = require('./lib/crypto/point');
+bitcore.crypto.Signature = require('./lib/crypto/signature');
 
 // encoding
-luxcore.encoding = {};
-luxcore.encoding.Base58 = require('./lib/encoding/base58');
-luxcore.encoding.Base58Check = require('./lib/encoding/base58check');
-luxcore.encoding.BufferReader = require('./lib/encoding/bufferreader');
-luxcore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
-luxcore.encoding.Varint = require('./lib/encoding/varint');
+bitcore.encoding = {};
+bitcore.encoding.Base58 = require('./lib/encoding/base58');
+bitcore.encoding.Base58Check = require('./lib/encoding/base58check');
+bitcore.encoding.BufferReader = require('./lib/encoding/bufferreader');
+bitcore.encoding.BufferWriter = require('./lib/encoding/bufferwriter');
+bitcore.encoding.Varint = require('./lib/encoding/varint');
 
 // utilities
-luxcore.util = {};
-luxcore.util.buffer = require('./lib/util/buffer');
-luxcore.util.js = require('./lib/util/js');
-luxcore.util.preconditions = require('./lib/util/preconditions');
+bitcore.util = {};
+bitcore.util.buffer = require('./lib/util/buffer');
+bitcore.util.js = require('./lib/util/js');
+bitcore.util.preconditions = require('./lib/util/preconditions');
 
 // errors thrown by the library
-luxcore.errors = require('./lib/errors');
+bitcore.errors = require('./lib/errors');
 
 // main bitcoin library
-luxcore.Address = require('./lib/address');
-luxcore.Block = require('./lib/block');
-luxcore.MerkleBlock = require('./lib/block/merkleblock');
-luxcore.BlockHeader = require('./lib/block/blockheader');
-luxcore.HDPrivateKey = require('./lib/hdprivatekey.js');
-luxcore.HDPublicKey = require('./lib/hdpublickey.js');
-luxcore.Networks = require('./lib/networks');
-luxcore.Opcode = require('./lib/opcode');
-luxcore.PrivateKey = require('./lib/privatekey');
-luxcore.PublicKey = require('./lib/publickey');
-luxcore.Script = require('./lib/script');
-luxcore.Transaction = require('./lib/transaction');
-luxcore.URI = require('./lib/uri');
-luxcore.Unit = require('./lib/unit');
+bitcore.Address = require('./lib/address');
+bitcore.Block = require('./lib/block');
+bitcore.MerkleBlock = require('./lib/block/merkleblock');
+bitcore.BlockHeader = require('./lib/block/blockheader');
+bitcore.HDPrivateKey = require('./lib/hdprivatekey.js');
+bitcore.HDPublicKey = require('./lib/hdpublickey.js');
+bitcore.Networks = require('./lib/networks');
+bitcore.Opcode = require('./lib/opcode');
+bitcore.PrivateKey = require('./lib/privatekey');
+bitcore.PublicKey = require('./lib/publickey');
+bitcore.Script = require('./lib/script');
+bitcore.Transaction = require('./lib/transaction');
+bitcore.URI = require('./lib/uri');
+bitcore.Unit = require('./lib/unit');
 
 // dependencies, subject to change
-luxcore.deps = {};
-luxcore.deps.bnjs = require('bn.js');
-luxcore.deps.bs58 = require('bs58');
-luxcore.deps.Buffer = Buffer;
-luxcore.deps.elliptic = require('elliptic');
-luxcore.deps.scryptsy = require('scryptsy');
-luxcore.deps._ = require('lodash');
+bitcore.deps = {};
+bitcore.deps.bnjs = require('bn.js');
+bitcore.deps.bs58 = require('bs58');
+bitcore.deps.Buffer = Buffer;
+bitcore.deps.elliptic = require('elliptic');
+bitcore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-luxcore.Transaction.sighash = require('./lib/transaction/sighash');
+bitcore.Transaction.sighash = require('./lib/transaction/sighash');

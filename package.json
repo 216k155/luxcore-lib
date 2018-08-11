@@ -1,8 +1,8 @@
 {
   "name": "luxcore-lib",
-  "version": "0.13.22",
-  "description": "A pure and powerful JavaScript Luxcoin library.",
-  "author": "BitPay <dev@bitpay.com>",
+  "version": "0.0.1",
+  "description": "A pure and powerful JavaScript LUX library.",
+  "author": "LUX <admin@luxcore.io>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -10,11 +10,9 @@
     "coverage": "gulp coverage",
     "build": "gulp"
   },
-  "contributors": [
-    "216k155 <216k155@i2pd.net>"
-  ],
+  "contributors": [],
   "keywords": [
-    "litecoin",
+    "lux",
     "bitcoin",
     "transaction",
     "address",
@@ -32,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/216k155/luxcore-lib.git"
+    "url": "https://github.com/216k155/luxcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
@@ -43,23 +41,14 @@
     "buffer-compare": "=1.0.0",
     "elliptic": "=3.0.3",
     "inherits": "=2.0.1",
-    "lodash": "=3.10.1",
-    "scryptsy": "=2.0.0"
+    "lodash": "=3.10.1"
   },
   "devDependencies": {
+    "bitcore-build": "bitpay/bitcore-build",
     "brfs": "^1.2.0",
     "chai": "^1.10.0",
     "gulp": "^3.9.1",
-    "luxcore-build": "github:216k155/luxcore-build",
     "sinon": "^1.13.0"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/216k155/luxcore-lib/issues"
-  },
-  "homepage": "https://github.com/216k155/luxcore-lib#readme",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  }
+  "license": "MIT"
 }

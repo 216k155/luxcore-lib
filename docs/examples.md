@@ -40,7 +40,7 @@ var transaction = new luxcore.Transaction()
   .sign(privateKey);
 ```
 
-## Sign a Bitcoin message
+## Sign a LUX message
 ```javascript
 var Message = require('luxcore-message');
 
@@ -50,7 +50,7 @@ var message = new Message('This is an example of a signed message.');
 var signature = message.sign(privateKey);
 ```
 
-## Verify a Bitcoin message
+## Verify a LUX message
 ```javascript
 var Message = require('luxcore-message');
 

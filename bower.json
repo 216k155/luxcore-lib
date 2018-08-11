@@ -1,18 +1,18 @@
 {
   "name": "luxcore-lib",
   "main": "./luxcore-lib.min.js",
-  "version": "0.13.19",
+  "version": "0.0.1",
   "homepage": "http://luxcore.io",
   "authors": [
-    "BitPay, Inc."
+    "LUX <admin@luxcore.io>"
   ],
-  "description": "A pure, powerful core for your litecoin project.",
+  "description": "A pure, powerful Luxcore lib",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "litecoin",
-    "luxcore",
+    "bitcoin",
+    "bitcore",
     "btc",
     "satoshi"
   ],

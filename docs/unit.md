@@ -1,5 +1,5 @@
 # Unit
-Unit is a utility for handling and converting bitcoin units. We strongly recommend to always use satoshis to represent amount inside your application and only convert them to other units in the front-end.
+Unit is a utility for handling and converting LUX units. We strongly recommend to always use satoshis to represent amount inside your application and only convert them to other units in the front-end.
 
 To understand the need of using the `Unit` class when dealing with unit conversions, see this example:
 
@@ -10,17 +10,6 @@ To understand the need of using the `Unit` class when dealing with unit conversi
 > var Unit = luxcore.Unit;
 > Unit.fromMilis(81.99).toSatoshis() // correct
 8199000
-```
-
-## Supported units
-The supported units are BTC, mBTC, bits (micro BTCs, uBTC) and satoshis. The codes for each unit can be found as members of the Unit class.
-
-```javascript
-var btcCode = Unit.BTC;
-var mbtcCode = Unit.mBTC;
-var ubtcCode = Unit.uBTC;
-var bitsCode = Unit.bits;
-var satsCode = Unit.satoshis;
 ```
 
 ## Creating units

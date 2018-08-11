@@ -1,11 +1,11 @@
 # Browser Builds
 Luxcore and most official submodules work in the browser, thanks to [browserify](http://browserify.org/) (some modules are not fully compatible with web browsers).
 
-The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `luxcore` and `bitcore-mnemonic`, you do:
+The easiest and recommended way to use them, is via [Bower](http://bower.io/), a browser package manager, and get the release bundles. For example, when building an app that uses `luxcore` and `luxcore-mnemonic`, you do:
 
 ```sh
 bower install luxcore-lib
-bower install bitcore-mnemonic
+bower install luxcore-mnemonic
 ```
 
 You can also use a `bower.json` file to store the dependencies of your project:
@@ -16,8 +16,8 @@ You can also use a `bower.json` file to store the dependencies of your project:
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
-    "luxcore-lib": "^0.13.7",
-    "bitcore-mnemonic": "^1.0.1"
+    "luxcore": "^0.0.1",
+    "luxcore-mnemonic": "^0.0.1"
   }
 }
 ```
@@ -33,14 +33,14 @@ After this, you can include the bundled release versions in your HTML file:
 <head>
   <meta charset="utf-8">
   <script src="bower_components/luxcore/luxcore-lib.min.js"></script>
-  <script src="bower_components/bitcore-mnemonic/bitcore-mnemonic.min.js"></script>
+  <script src="bower_components/luxcore-mnemonic/luxcore-mnemonic.min.js"></script>
 </head>
 
 <body>
 
   <script type="text/javascript">
     var luxcore = require('luxcore-lib');
-    var Mnemonic = require('bitcore-mnemonic');
+    var Mnemonic = require('luxcore-mnemonic');
     // etc...
   </script>
 
@@ -57,7 +57,7 @@ browserify --require ./index.js:luxcore-lib | uglifyjs > luxcore-lib.min.js
 ```
 
 ```sh
-browserify --require ./index.js:bitcore-mnemonic --external luxcore-lib | uglifyjs > bitcore-mnemonic.min.js
+browserify --require ./index.js:luxcore-mnemonic --external luxcore-lib | uglifyjs > luxcore-mnemonic.min.js
 ```
 
 In many of the modules you can also run the command to build a browser bundle:

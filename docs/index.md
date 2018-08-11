@@ -1,10 +1,6 @@
-# Bitcore v0.14
-
 ## Principles
 
-Luxcoin is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the Luxcoin network allows for highly resilient litecoin infrastructure, and the developer community needs reliable, open-source tools to implement litecoin apps and services. Luxcore provides a reliable API for JavaScript apps that need to interface with Luxcoin.
-
-To get started, just `npm install luxcore` or `bower install luxcore`.
+LUX is a powerful new peer-to-peer platform for the next generation of financial technology. The decentralized nature of the LUX network allows for highly resilient LUX infrastructure, and the developer community needs reliable, open-source tools to implement LUX apps and services. Luxcore provides a reliable API for JavaScript apps that need to interface with LUX.
 
 # Documentation Index
 
@@ -17,10 +13,10 @@ To get started, just `npm install luxcore` or `bower install luxcore`.
 
 ## Payment Handling
 * [Using Different Units](unit.md)
-* [Acknowledging and Requesting Payments: Bitcoin URIs](uri.md)
+* [Acknowledging and Requesting Payments: LUX URIs](uri.md)
 * [The Transaction Class](transaction.md)
 
-## Bitcoin Internals
+## LUX Internals
 * [Scripts](script.md)
 * [Block](block.md)
 
@@ -31,20 +27,7 @@ To get started, just `npm install luxcore` or `bower install luxcore`.
 ## Module Development
 * [Browser Builds](browser.md)
 
-## Modules
-
-Some functionality is implemented as a module that can be installed separately:
-
-* [Payment Protocol Support](https://github.com/bitpay/bitcore-payment-protocol)
-* [Peer to Peer Networking](https://github.com/litecoin-project/luxcore-p2p)
-* [Bitcoin Core JSON-RPC](https://github.com/bitpay/bitcoind-rpc)
-* [Payment Channels](https://github.com/bitpay/bitcore-channel)
-* [Mnemonics](https://github.com/bitpay/bitcore-mnemonic)
-* [Elliptical Curve Integrated Encryption Scheme](https://github.com/bitpay/bitcore-ecies)
-* [Blockchain Explorers](https://github.com/bitpay/bitcore-explorers)
-* [Signed Messages](https://github.com/bitpay/bitcore-message)
-
-# Examples
+# Examples 
 
 ## Create and Save a Private Key
 

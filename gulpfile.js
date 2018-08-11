@@ -1,5 +1,5 @@
 
 
-var luxcoreTasks = require('luxcore-build');
+var bitcoreTasks = require('bitcore-build');
 
-luxcoreTasks('lib');
+bitcoreTasks('lib');
