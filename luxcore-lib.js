@@ -4691,7 +4691,7 @@ addNetwork({
   xpubkey: 0x0488b21e,
   xprivkey: 0x0488ade4,
   networkMagic: 0xf9beb4d9,
-  port: 8333,
+  port: 9888,
   dnsSeeds: [
     'seed.bitcoin.sipa.be',
     'dnsseed.bluematt.me',
@@ -4727,7 +4727,7 @@ var testnet = get('testnet');
 // Add configurable values for testnet/regtest
 
 var TESTNET = {
-  PORT: 18333,
+  PORT: 9777,
   NETWORK_MAGIC: BufferUtil.integerAsBuffer(0x0b110907),
   DNS_SEEDS: [
     'testnet-seed.bitcoin.petertodd.org',
